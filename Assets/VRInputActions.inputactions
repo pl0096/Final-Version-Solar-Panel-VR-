@@ -1,0 +1,87 @@
+{
+    "name": "VRInputActions",
+    "maps": [
+        {
+            "name": "SolarPanelControls",
+            "id": "765fd66e-01e4-4fe7-aa25-80d6ce5209e9",
+            "actions": [
+                {
+                    "name": "RotateToggle",
+                    "type": "Button",
+                    "id": "3345f935-3f67-404e-8a5a-5491e220d106",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate Step",
+                    "type": "Button",
+                    "id": "fb3d71a9-7196-4ad7-ad97-cb1c98e5d604",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d0bcef78-f874-42d7-8d1f-fab81813d15b",
+                    "path": "<XRSimulatedController>/gripButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1cb46c8a-363c-436c-b603-96c3ef311f8d",
+                    "path": "<HandInteraction>/{GripButton}",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "06cda091-f225-4617-ad30-431bdabc9c66",
+                    "path": "<XRController>{LeftHand}/{GripButton}",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "117c3837-184b-4083-b208-373606c35fab",
+                    "path": "<XRSimulatedController>/triggerButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Step",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "226d8400-6486-4a8d-9676-27de515cd93c",
+                    "path": "<XRController>{LeftHand}/{TriggerButton}",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Step",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
